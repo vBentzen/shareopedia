@@ -13,15 +13,6 @@ group :development do
   gem 'web-console', '~> 2.0'
 end
 
-gem 'bootstrap'
-gem 'coffee-rails', '~> 4.1.0'
-gem 'figaro'
-gem 'jquery-rails'
-gem 'turbolinks'
-gem 'sass-rails', '~> 5.0'
-gem 'uglifier', '>= 1.3.0'
-
-
 group :development, :test do
   gem 'byebug'
   gem 'spring'
@@ -31,3 +22,14 @@ group :development, :test do
   gem 'factory_girl_rails'
   gem 'pry-rails'
 end
+
+# Use Bootstrap for CSS
+gem 'bootstrap'
+# Use device for authentication
+gem 'devise'
+gem 'coffee-rails', '~> 4.1.0'
+gem 'figaro'
+gem 'jquery-rails'
+gem 'turbolinks'
+gem 'sass-rails', '~> 5.0'
+gem 'uglifier', '>= 1.3.0'
