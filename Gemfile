@@ -25,8 +25,8 @@ group :development, :test do
   gem 'pry-rails'
 end
 
-# Use Bootstrap for CSS
-gem 'bootstrap'
+# use bootstrap as css framework
+gem 'bootstrap-sass'
 # Use device for authentication
 gem 'devise'
 gem 'coffee-rails', '~> 4.1.0'

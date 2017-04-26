@@ -1,2 +1,8 @@
-<h1>Welcome#index</h1>
-<p>Find me in app/views/welcome/index.html.erb</p>
+<div class="jumbotron aligntextcenter">
+  <h2>Welcome to HowToPedia</h2>
+  <p>This is a private How to page, so please </p>
+  <p>
+    <%= link_to "Sign In", new_user_session_path %> or
+    <%=  link_to "Sign Up", new_user_registration_path, class: 'btn btn-primary' %> Today!
+  </p>
+</div>
