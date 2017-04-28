@@ -25,13 +25,20 @@ group :development, :test do
   gem 'pry-rails'
 end
 
+group :test do
+  gem "nyan-cat-formatter"
+end
+
 # use bootstrap as css framework
 gem 'bootstrap-sass'
 # Use device for authentication
 gem 'devise'
 gem 'coffee-rails', '~> 4.1.0'
+# Use Figaro to hide passwords
 gem 'figaro'
 gem 'jquery-rails'
+# Use Pundit for authorization
+gem 'pundit'
 gem 'turbolinks'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
