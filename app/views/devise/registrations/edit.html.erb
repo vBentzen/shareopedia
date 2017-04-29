@@ -1,14 +1,18 @@
 <div class="row">
   <div class="col-md-8">
-        <div class="media">
-          <br />
-          <div class="media-body">
-            <h2 class="media-heading">
-              <%= current_user.email %>
-            </h2>
-
-          </div>
-        </div>
+    <div class="media">
+      <br />
+      <div class="media-body">
+        <h2 class="media-heading"> <%="Hello #{current_user.email}" %>  </h2>
+        <% if current_user.role == 'premium' %>
+            <p>Are you sure you want to leave us? You can always join us again when you miss us.</p>
+          <%= button_to "Cancel Premium", root_path, class: 'btn btn-danger', data: { confirm: "Are you sure?" } %>
+        <% else %>
+          <h4>You want to become even more awesome?</h4>
+          <%= button_to "Upgrade to premium", charges_path, class: 'btn btn-success' %>
+        <% end %>
+      </div>
+    </div>
   </div>
   <div class="col-md-4">
 <h2>Edit <%= resource_name.to_s.humanize %></h2>

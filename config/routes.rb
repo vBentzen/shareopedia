@@ -1,7 +1,4 @@
 Rails.application.routes.draw do
-  get 'charges/new'
-
-  get 'charges/create'
 
   resources :charges, only: [:new, :create]
 

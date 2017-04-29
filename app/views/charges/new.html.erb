@@ -1,4 +1,11 @@
+
 <%= form_tag charges_path do %>
     <h4>Click the button!</h4>
+    <ul>
+      <li>You will become awesome</li>
+      <li>You will be able to create private stuff</li>
+      <li>You will be able to share your awesome private stuff</li>
+      <li>Are you ready to take the next step?</li>
+    </ul>
     <script class='stripe-button' src="https://checkout.stripe.com/checkout.js" data-key="<%= @stripe_btn_data[:key] %>" data-amount="<%= @stripe_btn_data[:amount] %>" data-description="<%= @stripe_btn_data[:description] %>" ></script>
 <% end %>
