@@ -40,6 +40,8 @@ gem 'jquery-rails'
 # Use Pundit for authorization
 gem 'pundit'
 gem 'turbolinks'
+# Use Stripe for payment
+gem 'stripe'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 
